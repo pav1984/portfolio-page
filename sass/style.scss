@@ -11,7 +11,7 @@ $primary-color: pink;
 $secondary-color: gold;
 $show-home-img: true;
 $home-img: url();
-$background-opacity: 0.9s;
+$background-opacity: 0.9;
 $height:900px;
 $letter-space: 1.5px;
 
@@ -152,11 +152,12 @@ img {
 
 .menu-btn {
     position: fixed;
-    top: 20%;
+    top: 5%;
     left: 5%;
-    z-index: 7;
+    z-index: 10;
     display: none;
-
+    cursor: pointer;
+    @include easyTransition;
 
     .btn-line {
         display: block;
@@ -164,24 +165,43 @@ img {
         height: 4px;
         background-color: #ffffff;
         margin: 5px auto;
+        @include easyTransition;
+    }
+
+    &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(7px, 6px);
+            }
+
+            &:nth-child(2) {
+                opacity: 0
+            }
+
+            &:nth-child(3) {
+                transform: rotate(135deg) translate(-6px, 6px);
+            }
+        }
     }
 }
 
 .menu {
-    .left-side-menu {
-        .my-picture {}
-    }
-}
-
-.menu-links {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 8;
+
+    // .left-side-menu {
+    //     .my-picture {}
+    // }
+}
+
+.menu-links {
     display: flex;
     list-style: none;
-    z-index: 7;
-
 
 
     .nav-item {
@@ -200,14 +220,69 @@ img {
 }
 
 @media (max-width: 768px) {
-    .menu-links {
-        display: none;
+    .menu {
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
 
-        &.navbar-hidden {
-            display: block;
-            text-align: center;
-            margin: 0 auto;
-            margin-bottom: 15px;
+        &.show {
+            visibility: visible;
+
+        }
+
+        &-left-side,
+        &-links {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            height: 100vh;
+            width: 50%;
+        }
+
+        &-links {
+            background-color: rgba(0, 0, 0, 0.6);
+            transform: translate3d(0, -100%, 0);
+            @include easyTransition;
+
+            &.show {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        &-left-side {
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translate3d(0, 100%, 0);
+            @include easyTransition;
+
+            &.show {
+                transform: translate3d(0, 0, 0);
+            }
+
+            .my-picture {
+                width: 250px;
+                height: 250px;
+                background: url('../images/zdjecie.png');
+                border-radius: 50%;
+                border: solid 2px $secondary-color;
+            }
+        }
+
+        .nav-item {
+            transform: translate3d(600px, 0, 0);
+            @include easyTransition;
+
+            &.show {
+                transform: translate3d(0, 0, 0)
+            }
+        }
+    }
+
+    @for $i from 1 through 5 {
+        .nav-item:nth-child(#{$i}) {
+            transition-delay: $i * 0.1s;
         }
     }
 

@@ -1,12 +1,29 @@
-//FUNCIONALITY FOR HAMBURGER-MENU
+const btnMenu = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const leftSideMenu = document.querySelector('.menu-left-side');
+const menuLinks = document.querySelector('.menu-links');
+const navItem = document.querySelectorAll('.nav-item');
+let activeMenu = false;
 
-function toggleMenu() {
-	document.querySelector('.menu-links').classList.toggle('navbar-hidden');
-}
-document.querySelector('.menu-btn').addEventListener('click', function(e) {
-	e.preventDefault();
-	toggleMenu();
-});
+// FUNCIONALITY FOR HAMBURGER-MENU
+
+// const toggleMenu = () => {
+// 	menu.classList.toggle('navbar-hidden');
+// };
+const showMenu = () => {
+	// event.preventDefault();
+	// toggleMenu();
+	if (!activeMenu) {
+		btnMenu.classList.toggle('close');
+		menu.classList.toggle('show');
+		leftSideMenu.classList.toggle('show');
+		menuLinks.classList.toggle('show');
+		navItem.forEach((item) => item.classList.toggle('show'));
+	}
+	activeMenu = false;
+};
+
+btnMenu.addEventListener('click', showMenu);
 
 //FUNCIONALITY FOR PARALLAX
 

@@ -1,0 +1,75 @@
+//BIG SCREENS
+@include xl {}
+
+// DESKTOP & LAPTOPS
+@include lg {
+    // .title {
+    //     transform: translate(-76%, 170px);
+    // }
+}
+
+// TABLETS
+
+@include md {}
+
+// MOBILE
+@include sm {
+    .title {
+        transform: translate(-50%, 121px);
+    }
+
+    .lg-heading {
+        font-size: 1.6rem;
+    }
+
+    .sm-heading {
+        font-size: 1.2rem
+    }
+
+    .fa-2x {
+        font-size: 1.6rem;
+    }
+
+    #preloading-screen .load-inner {
+        left: 50vw;
+        top: 40vh;
+
+        h3 {
+            font-size: 4vh;
+        }
+    }
+}
+
+//MOBILE NAVIGATION
+
+@include mobileNavigation {
+
+
+    div.menu-left-side,
+    ul.menu-links {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+
+    .menu-links {
+        height: 70vh;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    .menu-left-side {
+        height: 30vh;
+        transform: translate3d(-100%, 0, 0);
+
+        .my-picture {
+            background: url('../images/small-img.png');
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

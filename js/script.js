@@ -7,11 +7,6 @@ let activeMenu = false;
 
 // FUNCIONALITY FOR HAMBURGER-MENU
 
-setTimeout(function() {
-	$('#preloading-screen').fadeOut();
-}, 3000);
-
-console.log($('#preloading-screen'));
 const showMenu = () => {
 	if (!activeMenu) {
 		btnMenu.classList.toggle('close');
@@ -50,3 +45,9 @@ if ('IntersectionObserver' in window) {
 } else {
 	window.addEventListener('scroll', onScroll, scrollOptions);
 }
+
+//SCREEN LOADING
+
+setTimeout(function() {
+	$('#preloading-screen').fadeOut();
+}, 3000);

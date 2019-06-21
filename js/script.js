@@ -7,6 +7,11 @@ let activeMenu = false;
 
 // FUNCIONALITY FOR HAMBURGER-MENU
 
+setTimeout(function() {
+	$('#preloading-screen').fadeOut();
+}, 3000);
+
+console.log($('#preloading-screen'));
 const showMenu = () => {
 	if (!activeMenu) {
 		btnMenu.classList.toggle('close');

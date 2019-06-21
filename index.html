@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<script src="https://kit.fontawesome.com/ef0902e72c.js"></script>
+
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,84 +16,91 @@
 		<title>Portfolio</title>
 	</head>
 	<body id="bg-img">
-		<header>
-			<!-- HEADER -->
-			<!-- SECTION HERO -->
-			<section class="hero">
-				<picture class="hero-item parallax">
-					<img src="./images/bcg-img-0.png" alt="" />
-				</picture>
-				<div class="hero-item parallax title">
-					<h1 class="lg-heading">Pawel <span class="name-txt">Oczkowski</span></h1>
-					<h2 class="sm-heading">Junior Front-End Developer</h2>
-				</div>
-				<picture class="hero-item parallax">
-					<img src="./images/bcg-img-1.png" alt="" />
-				</picture>
-				<picture class="hero-item">
-					<img src="./images/bcg-img-2.png" alt="" />
-				</picture>
-				<picture class="hero-item">
-					<img src="./images/bcg-img-3.png" alt="" />
-				</picture>
-				<picture class="hero-item">
-					<img src="./images/bcg-img-4.png" alt="" />
-				</picture>
-			</section>
-		</header>
-		<!-- HEADER-SOCIAL -->
-		<section class="header-social">
-			<ul class="header-social-wrapper">
-				<li class="header-social-item">
-					<a href="https://www.linkedin.com" class="header-social-link" target="blank">
-						<span class="fab fa-linkedin-in fa-2x header-linkedin-icon"></span>
-					</a>
-				</li>
-				<li class="header-social-item">
-					<a href="https://github.com" class="header-social-link" target="blank">
-						<span class="fab fa-github fa-2x header-github-icon"></span>
-					</a>
-				</li>
-				<li class="header-social-item">
-					<a href="#contactme" class="header-btn-link">
-						<span class="fab far fa-envelope fa-2x header-btn-link-icon"></span>
-					</a>
-				</li>
-			</ul>
-		</section>
-		<!-- NAVIGATION AND MENU -->
-		<div class="menu-btn">
-			<span class="btn-line"></span>
-			<span class="btn-line"></span>
-			<span class="btn-line"></span>
-		</div>
-		<nav class="menu">
-			<div class="menu-left-side">
-				<div class="my-picture"></div>
+		<div id="preloading-screen">
+			<div class="load-inner">
+				<h3>Loading ...</h3>
 			</div>
-			<ul class="menu-links">
-				<li class="nav-item">
-					<a class="nav-link" href="#start"><span data-title="Start">Start</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#aboutme"><span data-title="O Mnie"> O Mnie</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#myskills"><span data-title="Technologie">Technologie</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#myprojects"><span data-title="Projekty">Projekty</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contactme"><span data-title="Kontakt">Kontakt</span></a>
-				</li>
-			</ul>
-		</nav>
-		<div class="pawel">
-			<h4>Pawel</h4>
 		</div>
-		<!-- <div class="blog-text"></div> -->
-
+		<div id="wrapper">
+			<header>
+				<!-- HEADER -->
+				<!-- SECTION HERO -->
+				<section class="hero">
+					<picture class="hero-item parallax">
+						<img src="./images/bcg-img-0.png" alt="" />
+					</picture>
+					<div class="hero-item parallax title">
+						<h1 class="lg-heading">Pawel <span class="name-txt">Oczkowski</span></h1>
+						<h2 class="sm-heading">Junior Front-End Developer</h2>
+					</div>
+					<picture class="hero-item parallax">
+						<img src="./images/bcg-img-1.png" alt="" />
+					</picture>
+					<picture class="hero-item">
+						<img src="./images/bcg-img-2.png" alt="" />
+					</picture>
+					<picture class="hero-item">
+						<img src="./images/bcg-img-3.png" alt="" />
+					</picture>
+					<picture class="hero-item">
+						<img src="./images/bcg-img-4.png" alt="" />
+					</picture>
+				</section>
+			</header>
+			<!-- HEADER-SOCIAL -->
+			<section class="header-social">
+				<ul class="header-social-wrapper">
+					<li class="header-social-item">
+						<a href="https://www.linkedin.com" class="header-social-link" target="blank">
+							<span class="fab fa-linkedin-in fa-2x header-linkedin-icon"></span>
+						</a>
+					</li>
+					<li class="header-social-item">
+						<a href="https://github.com" class="header-social-link" target="blank">
+							<span class="fab fa-github fa-2x header-github-icon"></span>
+						</a>
+					</li>
+					<li class="header-social-item">
+						<a href="#contactme" class="header-btn-link">
+							<span class="fab far fa-envelope fa-2x header-btn-link-icon"></span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- NAVIGATION AND MENU -->
+			<div class="menu-btn">
+				<span class="btn-line"></span>
+				<span class="btn-line"></span>
+				<span class="btn-line"></span>
+			</div>
+			<nav class="menu">
+				<div class="menu-left-side">
+					<div class="my-picture"></div>
+				</div>
+				<ul class="menu-links">
+					<li class="nav-item">
+						<a class="nav-link" href="#start"><span data-title="Start">Start</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#aboutme"><span data-title="O Mnie"> O Mnie</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#myskills"><span data-title="Technologie">Technologie</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#myprojects"><span data-title="Projekty">Projekty</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contactme"><span data-title="Kontakt">Kontakt</span></a>
+					</li>
+				</ul>
+			</nav>
+			<div class="pawel">
+				<h4>Pawel</h4>
+			</div>
+			<!-- <div class="blog-text"></div> -->
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

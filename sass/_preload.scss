@@ -1,0 +1,33 @@
+#preloading-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: $secondary-color;
+    text-align: center;
+    z-index: 100;
+}
+
+.load-inner {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 60vw;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 100;
+}
+
+h3 {
+    color: $primary-color;
+    font-size: 10vh;
+    animation: stretch 8s ease infinite;
+}
+
+@keyframes stretch {
+    0% {
+        letter-spacing: 0;
+    }
+
+    100% {
+        letter-spacing: 50px;
+    }
+}

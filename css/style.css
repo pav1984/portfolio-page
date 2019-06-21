@@ -21,7 +21,8 @@ h3.lg-heading {
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0;
 }
 
 a {
@@ -524,7 +525,6 @@ img {
   overflow: hidden;
   vertical-align: top;
   perspective-origin: 50% 50%;
-  font-size: 1.2rem;
 }
 
 .menu-links .nav-item .nav-link:hover span {
@@ -624,6 +624,39 @@ img {
   }
   .menu-btn {
     display: block;
+  }
+}
+
+#preloading-screen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #973700;
+  text-align: center;
+  z-index: 100;
+}
+
+.load-inner {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: 60vw;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+}
+
+h3 {
+  color: #FFAF00;
+  font-size: 10vh;
+  animation: stretch 8s ease infinite;
+}
+
+@keyframes stretch {
+  0% {
+    letter-spacing: 0;
+  }
+  100% {
+    letter-spacing: 50px;
   }
 }
 

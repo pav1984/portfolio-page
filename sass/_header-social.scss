@@ -1,0 +1,23 @@
+.header-social {
+    position: fixed;
+    z-index: 6;
+    top: 19%;
+    right: 7%;
+
+    .header-social-wrapper {
+        margin-top: 1rem;
+        list-style: none;
+
+        a {
+            &:hover {
+
+                color: $secondary-color;
+                @include easyTransition
+            }
+
+            .fab {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}

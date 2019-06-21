@@ -7,12 +7,7 @@ let activeMenu = false;
 
 // FUNCIONALITY FOR HAMBURGER-MENU
 
-// const toggleMenu = () => {
-// 	menu.classList.toggle('navbar-hidden');
-// };
 const showMenu = () => {
-	// event.preventDefault();
-	// toggleMenu();
 	if (!activeMenu) {
 		btnMenu.classList.toggle('close');
 		menu.classList.toggle('show');

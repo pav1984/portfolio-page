@@ -1,3 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=K2D:300,400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 3rem;
+}
+
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #ffffff;
+}
+
+body {
+  width: 100vw;
+  height: 150vh;
+  font-family: 'K2D', sans-serif;
+  line-height: 1.5;
+  background-color: #000000;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -330,45 +370,6 @@ template {
   display: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 400;
-}
-
-h1.lg-heading,
-h2.lg-heading,
-h3.lg-heading {
-  font-size: 3rem;
-}
-
-h1.sm-heading,
-h2.sm-heading,
-h3.sm-heading {
-  margin-bottom: 2rem;
-}
-
-a {
-  color: #ffffff;
-}
-
-body {
-  width: 100vw;
-  height: 150vh;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 1.5;
-  background-color: black;
-  overscroll-behavior-y: none;
-  overflow-x: hidden;
-}
-
 .hero {
   width: 100vw;
   height: 900px;
@@ -399,8 +400,8 @@ img {
   transform: translate(-67%, 170px);
   font-weight: bold;
   letter-spacing: 5px;
-  color: white;
-  text-shadow: 0px 0px 10px black;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #000000;
   text-align: center;
 }
 
@@ -441,7 +442,7 @@ img {
 }
 
 .name-txt {
-  color: gold;
+  color: #973700;
 }
 
 .header-social {
@@ -457,7 +458,7 @@ img {
 }
 
 .header-social .header-social-wrapper a:hover {
-  color: gold;
+  color: #973700;
   transition: all .7s ease-out;
 }
 
@@ -520,7 +521,7 @@ img {
 }
 
 .menu-links .nav-item .nav-link:hover {
-  color: gold;
+  color: #973700;
   transition: all .7s ease-out;
 }
 
@@ -564,7 +565,7 @@ img {
     height: 250px;
     background: url("../images/zdjecie.png");
     border-radius: 50%;
-    border: solid 2px gold;
+    border: solid 2px #973700;
   }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);

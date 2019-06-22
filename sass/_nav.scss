@@ -96,12 +96,10 @@
         visibility: hidden;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
 
         &.show {
             visibility: visible;
-
-
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
         &-left-side,

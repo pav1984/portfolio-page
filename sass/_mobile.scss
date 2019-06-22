@@ -1,12 +1,9 @@
 //BIG SCREENS
+
 @include xl {}
 
 // DESKTOP & LAPTOPS
-@include lg {
-    // .title {
-    //     transform: translate(-76%, 170px);
-    // }
-}
+@include lg {}
 
 // TABLETS
 

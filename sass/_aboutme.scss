@@ -1,0 +1,47 @@
+.about {
+    position: absolute;
+    z-index: 5;
+    padding: 2rem 0 0 0;
+    background-color: $bcg-color;
+    color: $primary-white;
+    width: 100%;
+    padding-bottom: 6vh;
+
+    h1.lg-heading {
+        width: 70%;
+        margin: 0 auto 3rem auto;
+        overflow: hidden;
+        text-align: center;
+        color: $primary-white;
+        @include titleStyle;
+
+
+        &:after {
+            margin: 0 -55% 0 .5em;
+        }
+    }
+
+    .photo-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .photo-about {
+            border-radius: 50%;
+            border: solid 2px $primary-color;
+        }
+
+        .my-cv {
+            margin: 3vh auto;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            span.fas {
+                margin-right: 1vw;
+            }
+        }
+    }
+}

@@ -9,6 +9,7 @@
 // COLORS
 $primary-color: #FFAF00;
 $secondary-color: #973700;
+$bcg-color: #7A271B;
 $primary-white: #ffffff;
 $primary-black: #000000;
 //OPACITY
@@ -22,7 +23,7 @@ h1,
 h2,
 h3 {
     margin: 0;
-    font-weight: 400;
+    font-weight: bold;
 
     &.lg-heading {
         font-size: 3rem;
@@ -36,6 +37,20 @@ h3 {
 
 a {
     color: #ffffff;
+}
+
+// MIXIN TITLE SECTION STYLE
+@mixin titleStyle {
+
+    &:after,
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 50%;
+        margin: 0 .5em 0 -55%;
+        vertical-align: middle;
+        border-bottom: 2px solid;
+    }
 }
 
 // TRANSITION
@@ -80,7 +95,7 @@ body {
     height: 150vh;
     font-family: 'K2D', sans-serif;
     line-height: 1.5;
-    background-color: $primary-black;
+    background-color: $bcg-color;
     overscroll-behavior-y: none;
     overflow-x: hidden;
 }

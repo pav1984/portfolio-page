@@ -70,6 +70,10 @@
     color: $secondary-color
 }
 
+.parallax-absolute {
+    position: absolute;
+}
+
 @media (max-width: 888px) {
     .title {
         transform: translate(-53%, 120px);

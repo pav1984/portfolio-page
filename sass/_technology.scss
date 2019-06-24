@@ -1,0 +1,31 @@
+.my-technology {
+    z-index: 6;
+    background: $primary-color;
+    width: 100%;
+    position: absolute;
+    padding-top: 8rem;
+
+    h1.lg-heading {
+        color: $primary-white;
+        width: 85%;
+        margin: 0 auto 3rem auto;
+        overflow: hidden;
+        text-align: center;
+        @include titleStyle;
+
+        &:after {
+            margin: 0 -55% 0 .5em;
+        }
+    }
+
+    .skill-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+
+        svg {
+            width: 10rem;
+        }
+    }
+}

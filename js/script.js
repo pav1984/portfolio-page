@@ -19,7 +19,7 @@ const showMenu = () => {
 };
 
 btnMenu.addEventListener('click', showMenu);
-
+menuLinks.addEventListener('click', showMenu);
 //FUNCIONALITY FOR PARALLAX
 
 const scrollOptions = { capture: false, passive: true };

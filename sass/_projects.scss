@@ -1,0 +1,115 @@
+.projects {
+    position: absolute;
+    z-index: 6;
+    background: $bcg-color;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    h1.lg-heading {
+        color: $primary-white;
+        width: 85%;
+        margin: 0 auto 3rem auto;
+        overflow: hidden;
+        text-align: center;
+        @include titleStyle;
+
+        &:after {
+            margin: 0 -55% 0 .5em;
+        }
+    }
+
+    .card {
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+        @include easyTransition;
+        height: 100%;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.8);
+        }
+
+        .img-container {
+            position: relative;
+        }
+
+        .card-img {
+            @include easyTransition;
+            width: 100%;
+            padding: 3rem;
+            height: 400px;
+        }
+
+        .images-icons {
+            @include easyTransition;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+
+            .img-icon {
+                font-size: 2.5rem;
+                margin: 1rem;
+                padding: 0.5rem;
+                color: $primary-white;
+                background: $primary-color;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .card {
+        &:hover {
+            .card-img {
+                transform: scale(1.15);
+                opacity: 0.2;
+            }
+        }
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .card {
+        &:hover {
+            .images-icons {
+                opacity: 1;
+            }
+        }
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+
+
+        .btn-more {
+            background: none;
+            text-decoration: none;
+            cursor: pointer;
+            line-height: 1.5;
+            padding: 1rem 2rem;
+            font-size: 1.3rem;
+
+            &:focus {
+                outline: 1px dotted $primary-color;
+            }
+        }
+
+        .btn-icon {
+            margin-left: 1rem;
+            font-size: 2rem;
+        }
+    }
+
+    .draw-border {
+        @include btn-border-drawing($primary-white, $primary-color, 2px, bottom, right);
+    }
+}

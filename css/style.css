@@ -690,7 +690,8 @@ template {
     font-size: 4vh;
   }
   .about h1.lg-heading,
-  .my-technology h1.lg-heading {
+  .my-technology h1.lg-heading,
+  .projects h1.lg-heading {
     font-size: 1.6rem;
   }
 }
@@ -779,7 +780,7 @@ template {
   z-index: 6;
   background: #FFAF00;
   width: 100%;
-  position: absolute;
+  position: relative;
   padding-top: 8rem;
 }
 
@@ -804,15 +805,176 @@ template {
   margin: 0 -55% 0 .5em;
 }
 
-.my-technology .skill-box {
+.my-technology .technology-content {
+  padding-bottom: 1.5rem;
+}
+
+.my-technology .skill {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 4rem;
 }
 
-.my-technology .skill-box svg {
+.my-technology .skill svg {
   width: 10rem;
+}
+
+.projects {
+  position: absolute;
+  z-index: 6;
+  background: #7A271B;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.projects h1.lg-heading {
+  color: #ffffff;
+  width: 85%;
+  margin: 0 auto 3rem auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.projects h1.lg-heading:after, .projects h1.lg-heading:before {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 2px solid;
+}
+
+.projects h1.lg-heading:after {
+  margin: 0 -55% 0 .5em;
+}
+
+.projects .card {
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all .7s ease-out;
+  height: 100%;
+  cursor: pointer;
+}
+
+.projects .card:hover {
+  box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.projects .card .img-container {
+  position: relative;
+}
+
+.projects .card .card-img {
+  transition: all .7s ease-out;
+  width: 100%;
+  padding: 3rem;
+  height: 400px;
+}
+
+.projects .card .images-icons {
+  transition: all .7s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.projects .card .images-icons .img-icon {
+  font-size: 2.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  color: #ffffff;
+  background: #FFAF00;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.projects .card:hover .card-img {
+  transform: scale(1.15);
+  opacity: 0.2;
+}
+
+.projects .card-body {
+  display: flex;
+  justify-content: center;
+}
+
+.projects .card:hover .images-icons {
+  opacity: 1;
+}
+
+.projects .btn-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.projects .btn-wrapper .btn-more {
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+}
+
+.projects .btn-wrapper .btn-more:focus {
+  outline: 1px dotted #FFAF00;
+}
+
+.projects .btn-wrapper .btn-icon {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.projects .draw-border {
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #ffffff;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.projects .draw-border::before, .projects .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.projects .draw-border::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+.projects .draw-border::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+
+.projects .draw-border:hover {
+  color: #FFAF00;
+}
+
+.projects .draw-border:hover::before, .projects .draw-border:hover::after {
+  border-color: #FFAF00;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.projects .draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.projects .draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
 }
 
 /*# sourceMappingURL=style.css.map */

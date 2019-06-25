@@ -38,9 +38,20 @@
 
     .about h1.lg-heading,
     .my-technology h1.lg-heading,
-    .projects h1.lg-heading {
+    .projects h1.lg-heading,
+    .contact-form h1.lg-heading {
         font-size: 1.6rem;
 
+    }
+
+    .contact-form {
+        form {
+            .half {
+                width: 100%;
+                float: none;
+                margin-bottom: 0;
+            }
+        }
     }
 }
 

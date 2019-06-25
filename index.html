@@ -574,13 +574,32 @@
 					</div>
 				</div>
 				<div class="btn-wrapper">
-					<a class="btn-more draw-border" href="#" target="_blank">Więcej na<span class="fab fa-github  btn-icon"></span>
-						 <div class="transition"></div>
+					<a class="btn-more draw-border" href="#" target="_blank"
+						>Więcej na<span class="fab fa-github  btn-icon"></span>
 					</a>
+				</div>
+			</section>
+			<!-- CONTACT -->
+			<section class="contact-form" id="contactme">
+				<h1 class="lg-heading">Kontakt</h1>
+				<div class="container">
+					<form action="https://formspree.io/pawel.oczko84@gmail.com" method="POST" class="contact-wrapper">
+						<div class="half left-side">
+							<input type="text" id="input-name" name="name" placeholder="Name" />
+							<input type="email" id="input-email" name="_replyto" placeholder="Email address" />
+							<input type="text" name='subject' id="input-subject" placeholder="Subject" />
+						</div>
+						<div class="half right-side">
+							<textarea type="text" name="message" id="input-message" placeholder="Message"></textarea>
+						</div>
+						<div class="status"></div>
+							<input type="submit" value="Send" id="input-submit" class="contact-submit" />
+					</form>
 				</div>
 			</section>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

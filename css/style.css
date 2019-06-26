@@ -371,68 +371,9 @@ template {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
-  .title {
-    transform: translate(-50%, 121px);
-  }
-  .lg-heading {
-    font-size: 1.6rem;
-  }
-  .sm-heading {
-    font-size: 1.2rem;
-  }
-  .fa-2x {
-    font-size: 1.6rem;
-  }
-  #preloading-screen .load-inner {
-    left: 50vw;
-    top: 40vh;
-  }
-  #preloading-screen .load-inner h3 {
-    font-size: 4vh;
-  }
-  .about h1.lg-heading,
-  .my-technology h1.lg-heading,
-  .projects h1.lg-heading,
-  .contact-form h1.lg-heading {
-    font-size: 1.6rem;
-  }
-  .contact-form form .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 700px) {
-  div.menu-left-side,
-  ul.menu-links {
-    float: none;
-    width: 100%;
-    min-height: 0;
-  }
-  div.menu-left-side.show,
-  ul.menu-links.show {
-    transform: translate3d(0, 0, 0);
-  }
-  .menu-links {
-    height: 70vh;
-    transform: translate3d(100%, 0, 0);
-  }
-  .menu-left-side {
-    height: 30vh;
-    transform: translate3d(-100%, 0, 0);
-  }
-  .menu-left-side .my-picture {
-    background: url("../images/small-img.png");
-    width: 150px;
-    height: 150px;
-  }
-}
-
 .hero {
   width: 100vw;
-  height: 899px;
+  height: 900px;
   --y: 0px;
 }
 
@@ -444,7 +385,7 @@ template {
 
 .img-parallax {
   width: 100%;
-  height: 899px;
+  height: 900px;
   object-fit: cover;
   object-position: top;
 }
@@ -516,9 +457,9 @@ template {
 
 .header-social {
   position: fixed;
-  z-index: 10;
-  top: 2vh;
-  right: 3vw;
+  z-index: 100;
+  top: 30vh;
+  right: 2vw;
 }
 
 .header-social .header-social-wrapper {
@@ -539,7 +480,10 @@ template {
   position: fixed;
   top: 5%;
   left: 5%;
-  z-index: 10;
+  z-index: 100;
+  padding: 1rem;
+  background-color: #973700;
+  border-radius: 50%;
   display: none;
   cursor: pointer;
   transition: all .7s ease-out;
@@ -573,14 +517,19 @@ template {
 .menu {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 8;
+  left: 0;
+  z-index: 100;
+  transition: all .7s ease-out;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  height: 4rem;
 }
 
 .menu-links {
   display: flex;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-links .nav-item {
@@ -596,7 +545,7 @@ template {
 }
 
 .menu-links .nav-item .nav-link:hover span {
-  background: #ffffff;
+  background: #000000;
   color: #ffffff;
   transform: translate3d(0px, 0px, -30px) rotateX(90deg);
 }
@@ -605,7 +554,7 @@ template {
   display: block;
   position: relative;
   padding: 0 3px;
-  transition: all .6s ease;
+  transition: all .8s ease;
   transform-origin: 50% 0%;
   transform-style: preserve-3d;
 }
@@ -616,9 +565,9 @@ template {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 0 4px;
+  padding: 5px 4px;
   color: #FFAF00;
-  background: #ffffff;
+  background: #000000;
   transform-origin: 50% 0%;
   transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
 }
@@ -692,6 +641,7 @@ template {
   }
   .menu-btn {
     display: block;
+    z-index: 200;
   }
 }
 
@@ -1026,8 +976,8 @@ template {
   padding: 1em;
   border-radius: 8px;
   display: block;
-  width: 100%;
-  margin-top: 1em;
+  width: 80%;
+  margin: 1em auto 0 auto;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   resize: none;
 }
@@ -1035,6 +985,10 @@ template {
 .contact-form form input:focus,
 .contact-form form textarea:focus {
   box-shadow: 0 0px 2px #ffaf00;
+}
+
+.contact-form form textarea {
+  height: 11rem;
 }
 
 .contact-form form .contact-submit {
@@ -1046,47 +1000,62 @@ template {
 }
 
 .contact-form form .contact-submit:hover {
-  border: 1px solid #ffffff;
   transition: all .7s ease-out;
   color: #FFAF00;
 }
 
-.contact-form form textarea {
-  height: 11.4rem;
+@media screen and (max-width: 500px) {
+  .title {
+    transform: translate(-50%, 121px);
+  }
+  .lg-heading {
+    font-size: 1.6rem;
+  }
+  .sm-heading {
+    font-size: 1.2rem;
+  }
+  .fa-2x {
+    font-size: 1.6rem;
+  }
+  #preloading-screen .load-inner {
+    left: 50vw;
+    top: 40vh;
+  }
+  #preloading-screen .load-inner h3 {
+    font-size: 4vh;
+  }
+  .about h1.lg-heading,
+  .my-technology h1.lg-heading,
+  .projects h1.lg-heading,
+  .contact-form h1.lg-heading {
+    font-size: 1.6rem;
+  }
 }
 
-.contact-form .half {
-  float: left;
-  width: 48%;
-  margin-bottom: 1em;
-}
-
-.contact-form .right-side {
-  width: 50%;
-}
-
-.contact-form .left-side {
-  margin-right: 2%;
-}
-
-.contact-form .status {
-  color: red;
-  font-size: 1.5rem;
-}
-
-.contact-form div.error {
-  clear: left;
-  margin-left: 5.3em;
-  color: red;
-  padding-right: 1.3em;
-  height: 100%;
-  padding-bottom: 0.3em;
-  line-height: 1.3;
-}
-
-.contact-form .input-error {
-  background: #ff9;
-  border: 1px solid red;
+@media (max-width: 700px) {
+  div.menu-left-side,
+  ul.menu-links {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  div.menu-left-side.show,
+  ul.menu-links.show {
+    transform: translate3d(0, 0, 0);
+  }
+  .menu-links {
+    height: 70vh;
+    transform: translate3d(100%, 0, 0);
+  }
+  .menu-left-side {
+    height: 30vh;
+    transform: translate3d(-100%, 0, 0);
+  }
+  .menu-left-side .my-picture {
+    background: url("../images/small-img.png");
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,10 @@
     position: fixed;
     top: 5%;
     left: 5%;
-    z-index: 10;
+    z-index: 100;
+    padding: 1rem;
+    background-color: $secondary-color;
+    border-radius: 50%;
     display: none;
     cursor: pointer;
     @include easyTransition;
@@ -38,14 +41,19 @@
 .menu {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 8;
+    left: 0;
+    z-index: 100;
+    @include easyTransition;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    height: 4rem;
 }
 
 .menu-links {
     display: flex;
     list-style: none;
+    justify-content: center;
+    align-items: center;
 
 
     .nav-item {
@@ -60,18 +68,20 @@
 
 
             &:hover span {
-                background: $primary-white;
+                background: $primary-black;
                 color: $primary-white;
                 transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+
             }
 
             span {
                 display: block;
                 position: relative;
                 padding: 0 3px;
-                transition: all .6s ease;
+                transition: all .8s ease;
                 transform-origin: 50% 0%;
                 transform-style: preserve-3d;
+
 
                 &:after {
                     content: attr(data-title);
@@ -79,11 +89,12 @@
                     position: absolute;
                     left: 0;
                     top: 0;
-                    padding: 0 4px;
+                    padding: 5px 4px;
                     color: $primary-color;
-                    background: $primary-white;
+                    background: $primary-black;
                     transform-origin: 50% 0%;
                     transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+
                 }
             }
         }
@@ -162,6 +173,8 @@
     }
 
     .menu-btn {
-        display: block
+        display: block;
+        z-index: 200;
+
     }
 }

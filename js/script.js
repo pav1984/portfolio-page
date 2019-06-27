@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const leftSideMenu = document.querySelector('.menu-left-side');
 const menuLinks = document.querySelector('.menu-links');
 const navItem = document.querySelectorAll('.nav-item');
+const body = document.querySelector('body');
 let activeMenu = false;
 
 // FUNCIONALITY FOR HAMBURGER-MENU
@@ -13,6 +14,7 @@ const showMenu = () => {
 		menu.classList.toggle('show');
 		leftSideMenu.classList.toggle('show');
 		menuLinks.classList.toggle('show');
+		body.classList.toggle('show');
 		navItem.forEach((item) => item.classList.toggle('show'));
 	}
 	activeMenu = false;
@@ -108,3 +110,16 @@ sr.reveal('#contact', {
 	origin: 'top',
 	distance: '50px'
 });
+
+(function(d) {
+	var w = d.documentElement.offsetWidth,
+		t = d.createTreeWalker(d.body, NodeFilter.SHOW_ELEMENT),
+		b;
+	while (t.nextNode()) {
+		b = t.currentNode.getBoundingClientRect();
+		if (b.right > w || b.left < 0) {
+			t.currentNode.style.setProperty('outline', '1px dotted red', 'important');
+			console.log(t.currentNode);
+		}
+	}
+})(document);

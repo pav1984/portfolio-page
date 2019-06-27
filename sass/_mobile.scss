@@ -12,7 +12,7 @@
 // MOBILE
 @include sm {
     .title {
-        transform: translate(-50%, 121px);
+        transform: translate(-50%, 20vh);
     }
 
     .lg-heading {
@@ -44,7 +44,14 @@
 
     }
 
+    .header-social {
+        top: 2vh;
+        right: 3vw;
+    }
 
+    .images-icons {
+        display: flex;
+    }
 }
 
 //MOBILE NAVIGATION

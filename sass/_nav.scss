@@ -103,6 +103,13 @@
 
 
 @media (max-width: 768px) {
+    body {
+        &.show {
+            overflow-y: hidden;
+        }
+
+    }
+
     .menu {
         visibility: hidden;
         height: 100%;
@@ -128,6 +135,7 @@
             background-color: rgba(0, 0, 0, 0.6);
             transform: translate3d(0, -100%, 0);
             @include easyTransition;
+            padding: 0;
 
             &.show {
                 transform: translate3d(0, 0, 0);
@@ -163,6 +171,7 @@
 
         .nav-link {
             text-transform: uppercase;
+            padding: .3rem 1rem;
         }
     }
 

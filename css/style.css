@@ -471,13 +471,28 @@ template {
   list-style: none;
 }
 
-.header-social .header-social-wrapper a:hover {
-  color: #973700;
+.header-social .header-social-wrapper .header-social-item {
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  background-color: #973700;
+}
+
+.header-social .header-social-wrapper .header-social-item:hover {
+  opacity: 0.6;
   transition: all .7s ease-out;
 }
 
+.header-social .header-social-wrapper a {
+  color: #ffffff;
+}
+
 .header-social .header-social-wrapper a .fab {
-  padding-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
 .menu-btn {
@@ -577,6 +592,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  body.show {
+    overflow-y: hidden;
+  }
   .menu {
     visibility: hidden;
     height: 100%;
@@ -599,6 +617,7 @@ template {
     background-color: rgba(0, 0, 0, 0.6);
     transform: translate3d(0, -100%, 0);
     transition: all .7s ease-out;
+    padding: 0;
   }
   .menu-links.show {
     transform: translate3d(0, 0, 0);
@@ -627,6 +646,7 @@ template {
   }
   .menu .nav-link {
     text-transform: uppercase;
+    padding: .3rem 1rem;
   }
   .nav-item:nth-child(1) {
     transition-delay: 0.1s;
@@ -1010,7 +1030,7 @@ template {
 
 @media screen and (max-width: 500px) {
   .title {
-    transform: translate(-50%, 121px);
+    transform: translate(-50%, 20vh);
   }
   .lg-heading {
     font-size: 1.6rem;
@@ -1033,6 +1053,13 @@ template {
   .projects h1.lg-heading,
   .contact-form h1.lg-heading {
     font-size: 1.6rem;
+  }
+  .header-social {
+    top: 2vh;
+    right: 3vw;
+  }
+  .images-icons {
+    display: flex;
   }
 }
 

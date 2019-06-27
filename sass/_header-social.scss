@@ -8,15 +8,29 @@
         margin-top: 1rem;
         list-style: none;
 
-        a {
-            &:hover {
+        .header-social-item {
+            display: flex;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            line-height: 2rem;
+            margin-bottom: 0.5rem;
+            background-color: $secondary-color;
 
-                color: $secondary-color;
+            &:hover {
+                opacity: 0.6;
                 @include easyTransition
             }
+        }
+
+        a {
+            color: $primary-white;
+
+
 
             .fab {
-                padding-bottom: 1rem;
+                font-size: 1.3rem;
             }
         }
     }

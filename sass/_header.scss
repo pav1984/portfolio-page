@@ -1,7 +1,7 @@
 .hero {
     width: 100vw;
     height: $height;
-    --y: 0px;
+
 
 
     @media (min-width: 1500px) {
@@ -34,8 +34,8 @@
     position: absolute;
 
     &:nth-child(1) {
-        will-change: transform;
-        transform: translateY(calc(var(--y) * -0.3));
+        // will-change: transform;
+        // transform: translateY(-200px);
         z-index: 1
     }
 
@@ -44,8 +44,8 @@
     }
 
     &:nth-child(3) {
-        will-change: transform;
-        transform: translateY(calc(var(--y) * -0.6));
+        // will-change: transform;
+        // transform: translateY(-600px);
         z-index: 3;
     }
 

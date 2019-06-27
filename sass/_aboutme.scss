@@ -1,10 +1,11 @@
 .about {
     position: relative;
     z-index: 6;
-    padding: 2rem 0 8rem 0;
     background-color: $bcg-color;
     color: $primary-white;
     width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
 
 
     h1.lg-heading {

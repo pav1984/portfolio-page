@@ -378,7 +378,6 @@ template {
 .hero {
   width: 100vw;
   height: 900px;
-  --y: 0px;
 }
 
 @media (min-width: 1500px) {
@@ -414,8 +413,6 @@ template {
 }
 
 .hero-item:nth-child(1) {
-  will-change: transform;
-  transform: translateY(calc(var(--y) * -0.3));
   z-index: 1;
 }
 
@@ -424,8 +421,6 @@ template {
 }
 
 .hero-item:nth-child(3) {
-  will-change: transform;
-  transform: translateY(calc(var(--y) * -0.6));
   z-index: 3;
 }
 
@@ -462,29 +457,13 @@ template {
 .header-social {
   position: fixed;
   z-index: 100;
-  top: 30vh;
-  right: 2vw;
+  top: 10vh;
+  right: 1vw;
 }
 
 .header-social .header-social-wrapper {
   margin-top: 1rem;
   list-style: none;
-}
-
-.header-social .header-social-wrapper .header-social-item {
-  display: flex;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  line-height: 2rem;
-  margin-bottom: 0.5rem;
-  background-color: #973700;
-}
-
-.header-social .header-social-wrapper .header-social-item:hover {
-  opacity: 0.6;
-  transition: all .7s ease-out;
 }
 
 .header-social .header-social-wrapper a {
@@ -493,6 +472,39 @@ template {
 
 .header-social .header-social-wrapper a .fab {
   font-size: 1.3rem;
+}
+
+.header-social-item {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  line-height: 4rem;
+  margin-bottom: 0.5rem;
+  background-color: #973700;
+}
+
+.header-social-item:hover {
+  opacity: 0.6;
+  transition: all .7s ease-out;
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .header-social .header-social-item {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 645px) {
+  .header-social .header-social-item {
+    width: 2rem;
+    height: 2rem;
+    line-height: 35px;
+  }
 }
 
 .menu-btn {
@@ -705,10 +717,11 @@ template {
 .about {
   position: relative;
   z-index: 6;
-  padding: 2rem 0 8rem 0;
   background-color: #7A271B;
   color: #ffffff;
   width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 }
 
 .about h1.lg-heading {
@@ -1086,6 +1099,20 @@ template {
     background: url("../images/small-img.png");
     width: 150px;
     height: 150px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .menu-left-side .my-picture {
+    width: 80px;
+    height: 80px;
+  }
+  .menu-links .nav-item {
+    padding: 0.3rem;
+    font-size: 13px;
+  }
+  .title {
+    transform: translate(-53%, 10vh);
   }
 }
 

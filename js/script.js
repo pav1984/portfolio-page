@@ -61,55 +61,50 @@ const sr = ScrollReveal({
 
 // Fitst Header
 sr.reveal('h1.top', {
-	origin: 'right',
-	distance: '300px'
+	origin: 'top',
+	distance: '50px'
 });
 sr.reveal('h2.bottom', {
-	distance: '100px',
-	delay: 500
+	distance: '50px',
+	delay: 200
 });
 
 //Sections Headers
 
 sr.reveal('.anim-scroll', {
-	distance: '80px',
-	origin: 'top',
-	delay: 200
+	distance: '50px',
+	origin: 'top'
 });
 
 sr.reveal('.text-about', {
-	origin: 'right',
-	distance: '200px'
+	origin: 'top',
+	distance: '80px'
 });
 sr.reveal('.photo-wrapper', {
-	origin: 'left',
-	distance: '200px'
+	origin: 'top',
+	distance: '100px'
 });
 
 //Technology icons
 
-sr.reveal('.skill', { delay: 200 }, 50);
+sr.reveal('.skill', {}, 50);
 
 // Projects
 
-sr.reveal('.left-project', {
-	origin: 'left',
-	distance: '200px'
-});
-sr.reveal('.right-project', {
-	origin: 'right',
-	distance: '200px'
+sr.reveal('.card', {
+	origin: 'top',
+	distance: '50px'
 });
 
 sr.reveal('.btn-wrapper', {
 	distance: '80px',
 	origin: 'top',
-	delay: 200
+	delay: 50
 });
 
 // Contact
 
 sr.reveal('#contact', {
-	origin: 'left',
-	distance: '200px'
+	origin: 'top',
+	distance: '50px'
 });

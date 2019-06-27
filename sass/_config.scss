@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=K2D:300,400,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+html {
     box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 // COLORS
@@ -96,8 +100,8 @@ a {
     transition: color $duration $duration/3;
     position: relative;
 
-    &::before,
-    &::after {
+    &:before,
+    &:after {
         border: 0 solid transparent;
         box-sizing: border-box;
         content: '';
@@ -110,14 +114,14 @@ a {
         #{$horizontal}: 0;
     }
 
-    &::before {
+    &:before {
         $h-side: if($horizontal=='left', 'right', 'left');
 
         border-#{$vertical}-width: $width;
         border-#{$h-side}-width: $width;
     }
 
-    &::after {
+    &:after {
         $v-side: if($vertical=='top', 'bottom', 'top');
 
         border-#{$v-side}-width: $width;
@@ -127,19 +131,19 @@ a {
     &:hover {
         color: $hover;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             border-color: $hover;
             transition: border-color 0s, width $duration, height $duration;
             width: 100%;
             height: 100%;
         }
 
-        &::before {
+        &:before {
             transition-delay: 0s, 0s, $duration;
         }
 
-        &::after {
+        &:after {
             transition-delay: 0s, $duration, 0s;
         }
     }

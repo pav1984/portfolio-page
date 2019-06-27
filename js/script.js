@@ -50,4 +50,66 @@ if ('IntersectionObserver' in window) {
 
 setTimeout(function() {
 	$('#preloading-screen').fadeOut();
-}, 3000);
+}, 2000);
+
+// PAGE ANIMATION
+
+const sr = ScrollReveal({
+	duration: 1000,
+	reset: true
+});
+
+// Fitst Header
+sr.reveal('h1.top', {
+	origin: 'right',
+	distance: '300px'
+});
+sr.reveal('h2.bottom', {
+	distance: '100px',
+	delay: 500
+});
+
+//Sections Headers
+
+sr.reveal('.anim-scroll', {
+	distance: '80px',
+	origin: 'top',
+	delay: 200
+});
+
+sr.reveal('.text-about', {
+	origin: 'right',
+	distance: '200px'
+});
+sr.reveal('.photo-wrapper', {
+	origin: 'left',
+	distance: '200px'
+});
+
+//Technology icons
+
+sr.reveal('.skill', { delay: 200 }, 50);
+
+// Projects
+
+sr.reveal('.left-project', {
+	origin: 'left',
+	distance: '200px'
+});
+sr.reveal('.right-project', {
+	origin: 'right',
+	distance: '200px'
+});
+
+sr.reveal('.btn-wrapper', {
+	distance: '80px',
+	origin: 'top',
+	delay: 200
+});
+
+// Contact
+
+sr.reveal('#contact', {
+	origin: 'left',
+	distance: '200px'
+});

@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<script src="https://kit.fontawesome.com/ef0902e72c.js"></script>
+	
+
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -30,8 +32,9 @@
 					<img class="img-parallax" src="./images/bcg-img-0.png" alt="" />
 				</picture>
 				<div class="hero-item parallax title">
-					<h1 class="lg-heading">Pawel <span class="name-txt">Oczkowski</span></h1>
-					<h2 class="sm-heading">Junior Front-End Developer</h2>
+					<h1 class="lg-heading top">Pawel <span class="name-txt">Oczkowski</span></h1>
+					<h2 class="sm-heading bottom">Junior Front-End Developer</h2>
+					
 				</div>
 				<picture class="hero-item parallax">
 					<img class="img-parallax" src="./images/bcg-img-1.png" alt="" />
@@ -99,7 +102,7 @@
 		</nav>
 		<!-- ABOUT ME -->
 		<section class="about" id="aboutme">
-			<h1 class="lg-heading">O mnie</h1>
+			<h1 class="lg-heading anim-scroll">O mnie</h1>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 col-lg-6 photo-wrapper">
@@ -128,7 +131,7 @@
 		</section>
 		<!-- TECHNOLOGY -->
 		<section class="my-technology" id="technology">
-			<h1 class="lg-heading">Umiejętności</h1>
+			<h1 class="lg-heading anim-scroll">Umiejętności</h1>
 			<div class="container">
 				<div class="technology-content">
 					<p class="text-technology">
@@ -348,11 +351,11 @@
 		</section>
 		<!-- PROJECTS -->
 		<section id="myprojects" class="projects">
-			<h1 class="lg-heading">Projekty</h1>
+			<h1 class="lg-heading anim-scroll">Projekty</h1>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-12 pb-4">
-						<div class="card">
+						<div class="card left-project">
 							<div class="img-container">
 								<div class="img-project">
 									<img class="card-img" src="./images/placeholder-400x400.png" alt="project1" />
@@ -372,7 +375,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-12 pb-4">
-						<div class="card">
+						<div class="card right-project">
 							<div class="img-container">
 								<div class="img-project">
 									<img class="card-img" src="./images/placeholder-400x400.png" alt="project1" />
@@ -392,7 +395,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-12 pb-4">
-						<div class="card">
+						<div class="card left-project">
 							<div class="img-container">
 								<div class="img-project">
 									<img class="card-img" src="./images/placeholder-400x400.png" alt="project1" />
@@ -412,7 +415,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-12 pb-4">
-						<div class="card">
+						<div class="card right-project">
 							<div class="img-container">
 								<div class="img-project">
 									<img class="card-img" src="./images/placeholder-400x400.png" alt="project1" />
@@ -432,7 +435,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-12 pb-4">
-						<div class="card">
+						<div class="card left-project">
 							<div class="img-container">
 								<div class="img-project">
 									<img class="card-img" src="./images/placeholder-400x400.png" alt="project1" />
@@ -452,7 +455,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-12 pb-4">
-						<div class="card">
+						<div class="card right-project">
 							<div class="img-container">
 								<div class="img-project">
 									<img class="card-img" src="./images/placeholder-400x400.png" alt="project1" />
@@ -481,32 +484,8 @@
 		</section>
 		<!-- CONTACT -->
 		<section class="contact-form" id="contactme">
-			<h1 class="lg-heading">Kontakt</h1>
+			<h1 class="lg-heading anim-scroll">Kontakt</h1>
 			<div class="container">
-				<!-- <form
-						action="https://formspree.io/pawel.oczko84@gmail.com"
-						method="POST"
-						class="contact-wrapper form"
-					>
-						<div class="half left-side">
-							<input type="text" id="input-name" name="name" required placeholder="Name" />
-
-							<input type="email" id="input-email" name="_replyto" required placeholder="Email address" />
-
-							<input type="text" name="subject" id="input-subject" required placeholder="Subject" />
-						</div>
-						<div class="half right-side">
-							<textarea
-								type="text"
-								name="message"
-								id="input-message"
-								required
-								placeholder="Message"
-							></textarea>
-						</div>
-						<div class="status"></div>
-						<input type="submit" value="Send" id="input-submit" class="contact-submit" />
-					</form> -->
 				<form action="https://formspree.io/pawel.oczko84@gmail.com" method="POST" id="contact">
 					<div class="form-group">
 						<input type="text" id="fname" name="name" class="form-control" data-validation="length required"
@@ -531,6 +510,7 @@
 	<script>
 		$.validate();
 	</script>
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="js/script.js"></script>
 </body>
 

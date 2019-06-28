@@ -52,6 +52,12 @@
     .images-icons {
         display: flex;
     }
+
+    .footer-wrapper {
+        .text-footer-wrapper {
+            flex-direction: column;
+        }
+    }
 }
 
 

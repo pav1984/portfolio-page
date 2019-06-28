@@ -1,0 +1,39 @@
+.footer-wrapper {
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    background: $primary-color;
+    padding-bottom: 2rem;
+
+    .text-footer-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-white;
+
+    }
+
+    .footer-social-item {
+        margin-right: 0.5rem;
+    }
+
+    .footer-social-wrapper {
+        display: flex;
+        list-style: none;
+
+        a {
+            color: $primary-white;
+
+            &:hover {
+                @include easyTransition;
+                cursor: pointer;
+                color: $secondary-color;
+            }
+
+            .fab {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+}

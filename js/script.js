@@ -22,6 +22,7 @@ const showMenu = () => {
 
 btnMenu.addEventListener('click', showMenu);
 menuLinks.addEventListener('click', showMenu);
+
 //FUNCIONALITY FOR PARALLAX
 
 const scrollOptions = { capture: false, passive: true };
@@ -57,7 +58,7 @@ setTimeout(function() {
 // PAGE ANIMATION
 
 const sr = ScrollReveal({
-	duration: 1000,
+	duration: 1500,
 	reset: true
 });
 

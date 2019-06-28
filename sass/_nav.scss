@@ -68,7 +68,6 @@
 
 
             &:hover span {
-                background: $primary-black;
                 color: $primary-white;
                 transform: translate3d(0px, 0px, -30px) rotateX(90deg);
 
@@ -91,7 +90,6 @@
                     top: 0;
                     padding: 5px 4px;
                     color: $primary-color;
-                    background: $primary-black;
                     transform-origin: 50% 0%;
                     transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
 

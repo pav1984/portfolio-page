@@ -576,7 +576,6 @@ template {
 }
 
 .menu-links .nav-item .nav-link:hover span {
-  background: #000000;
   color: #ffffff;
   transform: translate3d(0px, 0px, -30px) rotateX(90deg);
 }
@@ -598,7 +597,6 @@ template {
   top: 0;
   padding: 5px 4px;
   color: #FFAF00;
-  background: #000000;
   transform-origin: 50% 0%;
   transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
 }
@@ -974,7 +972,7 @@ template {
   z-index: 6;
   background: #FFAF00;
   width: 100%;
-  position: absolute;
+  position: relative;
   padding-top: 8rem;
   padding-bottom: 5rem;
 }
@@ -1039,6 +1037,44 @@ template {
 .contact-form form .contact-submit:hover {
   transition: all .7s ease-out;
   color: #FFAF00;
+}
+
+.footer-wrapper {
+  position: absolute;
+  z-index: 6;
+  width: 100%;
+  background: #FFAF00;
+  padding-bottom: 2rem;
+}
+
+.footer-wrapper .text-footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.footer-wrapper .footer-social-item {
+  margin-right: 0.5rem;
+}
+
+.footer-wrapper .footer-social-wrapper {
+  display: flex;
+  list-style: none;
+}
+
+.footer-wrapper .footer-social-wrapper a {
+  color: #ffffff;
+}
+
+.footer-wrapper .footer-social-wrapper a:hover {
+  transition: all .7s ease-out;
+  cursor: pointer;
+  color: #973700;
+}
+
+.footer-wrapper .footer-social-wrapper a .fab {
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 500px) {

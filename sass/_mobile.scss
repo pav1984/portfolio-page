@@ -58,6 +58,22 @@
             flex-direction: column;
         }
     }
+
+    .projects .card .card-img {
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    .projects {
+        .card {
+            &:hover {
+                .card-img {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
 }
 
 

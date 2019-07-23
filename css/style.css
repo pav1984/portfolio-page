@@ -890,6 +890,7 @@ template {
 .projects .card-body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .projects .card:hover .images-icons {
@@ -966,6 +967,25 @@ template {
 
 .projects .draw-border:hover:after {
   transition-delay: 0s, 0.25s, 0s;
+}
+
+@media (max-width: 992px) {
+  .projects .card .card-img {
+    padding: 1.1rem;
+    height: auto;
+  }
+  .projects .card:hover .card-img {
+    transform: scale(1.05);
+  }
+  .projects .images-icons {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects .card .card-img {
+    padding: 1.35rem;
+  }
 }
 
 .contact-form {
@@ -1112,6 +1132,13 @@ template {
   }
   .footer-wrapper .text-footer-wrapper {
     flex-direction: column;
+  }
+  .projects .card .card-img {
+    padding: 0.5rem;
+    height: auto;
+  }
+  .projects .card:hover .card-img {
+    transform: scale(1);
   }
 }
 

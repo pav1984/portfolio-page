@@ -643,7 +643,7 @@ template {
   .menu-left-side .my-picture {
     width: 250px;
     height: 250px;
-    background: url("../images/zdjecie.png");
+    background: url("../images/mypicture150.jpg");
     border-radius: 50%;
     border: solid 2px #973700;
   }
@@ -749,9 +749,11 @@ template {
   align-items: center;
 }
 
-.about .photo-wrapper .photo-about {
+.about .photo-wrapper .photo-about img {
   border-radius: 50%;
-  border: solid 2px #FFAF00;
+  border: solid 4px #FFAF00;
+  width: 100%;
+  height: 100%;
 }
 
 .about .photo-wrapper .my-cv {
@@ -765,6 +767,11 @@ template {
 
 .about .photo-wrapper .my-cv span.fas {
   margin-right: 1vw;
+}
+
+.about span.first-letter {
+  color: #FFAF00;
+  font-size: 2rem;
 }
 
 .my-technology {
@@ -797,7 +804,7 @@ template {
 }
 
 .my-technology .technology-content {
-  padding-bottom: 1.5rem;
+  padding-bottom: 5rem;
 }
 
 .my-technology .skill {
@@ -809,6 +816,11 @@ template {
 
 .my-technology .skill svg {
   width: 10rem;
+}
+
+.my-technology .text-technology {
+  text-align: center;
+  color: #ffffff;
 }
 
 .projects {
@@ -1162,7 +1174,7 @@ template {
     transform: translate3d(-100%, 0, 0);
   }
   .menu-left-side .my-picture {
-    background: url("../images/small-img.png");
+    background: url("../images/mypicture150.jpg");
     width: 150px;
     height: 150px;
   }

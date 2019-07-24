@@ -19,7 +19,7 @@
     }
 
     .technology-content {
-        padding-bottom: 1.5rem;
+        padding-bottom: 5rem;
     }
 
     .skill {
@@ -31,5 +31,10 @@
         svg {
             width: 10rem;
         }
+    }
+
+    .text-technology {
+        text-align: center;
+        color: $primary-white;
     }
 }

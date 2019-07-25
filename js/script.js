@@ -1,3 +1,4 @@
+// GLOBAL VARIABLES
 const btnMenu = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const leftSideMenu = document.querySelector('.menu-left-side');

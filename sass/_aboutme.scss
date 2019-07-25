@@ -7,7 +7,6 @@
     padding-top: 8rem;
     padding-bottom: 5rem;
 
-
     h1.lg-heading {
         width: 85%;
         margin: 0 auto 3rem auto;
@@ -15,8 +14,6 @@
         text-align: center;
         color: $primary-white;
         @include titleStyle;
-
-
 
         &:after {
             margin: 0 -55% 0 .5em;
